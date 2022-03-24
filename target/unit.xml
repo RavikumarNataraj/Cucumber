@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="120.067">
+<testcase classname="Validating Adactin login functionality" name="Validating Adactin login with valid credential" time="37.307">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given Launch the Browser....................................................passed
+And open the adactin page...................................................passed
+When Enter the "RavikumarNataraj" and "123456"..............................passed
+And click the login button..................................................passed
+Then I validate the outcomes................................................passed
+And close the browser.......................................................undefined
+]]></failure>
+</testcase>
+<testcase classname="Validating Adactin login functionality" name="Validating Adactin login with valid credential 2" time="33.717">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given Launch the Browser....................................................passed
+And open the adactin page...................................................passed
+When Enter the "admin" and "admin123".......................................passed
+And click the login button..................................................passed
+Then I validate the outcomes................................................passed
+And close the browser.......................................................undefined
+]]></failure>
+</testcase>
+<testcase classname="Validating Adactin login functionality" name="Validating Adactin login with valid credential 3" time="26.345">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given Launch the Browser....................................................passed
+And open the adactin page...................................................passed
+When Enter the "admin" and "admin123".......................................passed
+And click the login button..................................................passed
+Then I validate the outcomes................................................passed
+And close the browser.......................................................undefined
+]]></failure>
+</testcase>
+<testcase classname="Validating Adactin login functionality" name="Validating Adactin login with valid credential 4" time="21.883">
+<failure message="Could not start a new session. Response code 500. Message: session not created&#10;from disconnected: received Inspector.detached event&#10;  (Session info: chrome=99.0.4844.74)&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'HASEE-PC', ip: '192.168.50.233', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_202'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given Launch the Browser....................................................failed
+And open the adactin page...................................................skipped
+When Enter the "ravikumar" and "ravi123"....................................skipped
+And click the login button..................................................skipped
+Then I validate the outcomes................................................skipped
+And close the browser.......................................................skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from disconnected: received Inspector.detached event
+  (Session info: chrome=99.0.4844.74)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'HASEE-PC', ip: '192.168.50.233', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:48)
+	at com.adact.stepdef.AdactLogin.launch_the_browser(AdactLogin.java:20)
+	at ✽.Launch the Browser(file:///C:/Users/Elcot/eclipse-workspace/Cucumberproject/src/test/resources/Features/booking.feature:5)
+]]></failure>
+</testcase>
+</testsuite>
