@@ -22,6 +22,8 @@ public class AdactLogin {
 	@Given("open the adactin page")
 	public void open_the_adactin_page() {
 		driver.get("https://adactinhotelapp.com/");
+		
+		System.out.println("Venkat R");
 	}
 	
 	@When("Enter the {string} and {string}")
